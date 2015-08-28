@@ -1,0 +1,52 @@
+<ui:composition template="/WEB-INF/template/CommonLayout.xhtml"
+	xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui">
+
+	<ui:define name="title">Current Positions</ui:define>
+	<ui:define name="body">
+		<p:tabView>
+			<p:tab title="Login">
+		<div>
+			<form>
+				<p:panelGrid columns="2" >
+					<p:outputLabel value="Login" for="login" />
+					<p:inputText id="login" required="true"
+						 />
+
+					<p:outputLabel value="Password" for="senha" />
+					<p:password id="senha" required="true"
+						 feedback="true"
+						match="confirmacaoSenha" />
+
+					<p:outputLabel value="Confirm password" for="confirmacaoSenha" />
+					<p:password id="confirmacaoSenha" required="true" />
+
+					<p:outputLabel value="" />
+					<p:commandButton value="Sign in!"
+						style="margin-top: 20px; width:210px"
+						 />
+				</p:panelGrid>
+			</form>
+		</div>
+		</p:tab>
+		<p:tab title="Edit Info">	
+		Aqui edita-se!
+				</p:tab>
+			
+		<p:tab title="Consultar Candidaturas">	
+		E aqui consulta-se!
+				</p:tab>
+		
+		<p:tab title="Minhas Candidaturas">
+		E aqui faz-se coisas!
+				</p:tab>
+		</p:tabView>
+		
+	</ui:define>
+
+
+
+</ui:composition>

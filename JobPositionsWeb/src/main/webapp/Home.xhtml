@@ -1,0 +1,28 @@
+<ui:composition template="/WEB-INF/template/CommonLayout.xhtml"
+	xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui">
+
+	<ui:define name="title">Current Positions</ui:define>
+	<ui:define name="body">
+		Barra horizontal vermelha, #{searchPositionsBean.nome}
+		<br />
+		<p:dataTable style="padding: 100px; margin-top: 20px" value="#{searchPositionsBean.positions}" var="position" rows="20" emptyMessage="No records found.">
+			<p:column headerText="Description" style="text-align: center; width:200px">
+				<h:outputText value="Programador em Java" />
+			</p:column>
+			<p:column headerText="Location" style="text-align: center; width:150px">
+				<h:outputText value="Coimbra"/>
+			</p:column>
+			<p:column headerText="Date" style="text-align: center; width:150px">
+				<h:outputText value="19-08-2015" />
+			</p:column>
+
+		</p:dataTable>
+	</ui:define>
+
+
+
+</ui:composition>
