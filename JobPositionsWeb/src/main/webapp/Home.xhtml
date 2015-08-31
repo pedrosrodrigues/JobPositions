@@ -7,23 +7,43 @@
 
 	<ui:define name="title">Current Positions</ui:define>
 	<ui:define name="body">
-		Barra horizontal vermelha
-		
-				Barra horizontal BRANCO
+			Barra horizontal BRANCO
 		
 		<br />
-		<p:dataTable style="padding: 100px; margin-top: 20px" value="#{searchPositionsBean.positions}" var="position" rows="20" emptyMessage="No records found.">
-			<p:column headerText="Description" style="text-align: center; width:200px">
-				<h:outputText value="Programador em Java" />
-			</p:column>
-			<p:column headerText="Location" style="text-align: center; width:150px">
-				<h:outputText value="Coimbra"/>
-			</p:column>
-			<p:column headerText="Date" style="text-align: center; width:150px">
-				<h:outputText value="19-08-2015" />
-			</p:column>
 
-		</p:dataTable>
+		<h:form id="frm">
+
+			<p:dataTable style="padding: 100px; margin-top: 20px"
+				value="#{searchPositionsBean.positions}" var="position" rows="10"
+				emptyMessage="No records found." paginator="true"
+				paginatorPosition="bottom"
+				paginatorTemplate="{CurrentPageReport}  {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink} {RowsPerPageDropdown}">
+				<p:column headerText="Description"
+					style="text-align: center; width:200px"
+					sortBy="COLOCAR AQUI O EL DO OUTPUTTEXT">
+					<h:outputText value="Programador em Java" />
+				</p:column>
+				<p:column headerText="Location"
+					style="text-align: center; width:150px">
+					<h:outputText value="Portugal,(Coimbra)" />
+				</p:column>
+				<p:column headerText="Date" style="text-align: center; width:150px">
+					<h:outputText value="19-08-2015" />
+				</p:column>
+				<p:column style="width:16px">
+					<p:rowToggler />
+				</p:column>
+
+				<p:rowExpansion id="rowselection">
+
+					<p:panelGrid columns="4" columnClasses="label" style="width:95%">
+
+						<h:outputText value="JOB DESCRIPTION" />
+
+					</p:panelGrid>
+				</p:rowExpansion>
+			</p:dataTable>
+		</h:form>
 	</ui:define>
 
 
