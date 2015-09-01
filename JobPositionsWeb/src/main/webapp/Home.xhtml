@@ -7,18 +7,16 @@
 
 	<ui:define name="title">Current Positions</ui:define>
 	<ui:define name="body">
-			Barra horizontal BRANCO
-		
-		<br />
 
 		<h:form id="frm">
 
-			<p:dataTable style="padding: 100px; margin-top: 20px"
+			<p:dataTable style="margin-top:20px; padding: 100px;" target="_blank" class="text-muted" 
 				value="#{searchPositionsBean.positions}" var="position" rows="10"
 				emptyMessage="No records found." paginator="true"
 				paginatorPosition="bottom"
-				paginatorTemplate="{CurrentPageReport}  {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink} {RowsPerPageDropdown}">
-				<p:column headerText="Description"
+				paginatorTemplate=" {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink} {RowsPerPageDropdown}">
+				
+				<p:column styleClass="jobs-table" headerText="DESCRIPTION"
 					style="text-align: center; width:200px"
 					sortBy="COLOCAR AQUI O EL DO OUTPUTTEXT">
 					<h:outputText value="Programador em Java" />
@@ -35,14 +33,11 @@
 				</p:column>
 
 				<p:rowExpansion id="rowselection">
-
 					<p:panelGrid columns="4" columnClasses="label" style="width:95%">
-
 						<h:outputText value="JOB DESCRIPTION" />
-
 					</p:panelGrid>
 				</p:rowExpansion>
-			</p:dataTable>
+		</p:dataTable>
 		</h:form>
 	</ui:define>
 

@@ -1,23 +1,22 @@
 @charset "utf-8";
 
 body {
-	font-size: 12px;
-	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-family: "PFDinDisplayProLight", Georgia;
 	margin: 0px;
 	font-weight: normal;
 }
 
 header {
 	padding: 5px 0px;
-	margin-bottom: 20px;
 	height: 160px;
 	background-color: #ffffff;
 	color: #fff;
 }
 
-header > div {
-	margin-left: 50px;
-	margin-top: 20px;
+header>div {
+	/* margin: 20px; */
+	
 }
 
 #conteudo {
@@ -33,7 +32,9 @@ h1 {
 	font-size: 24px;
 	font-weight: 500;
 	padding: 0px;
-	margin: 0px
+	margin: 0px;
+	color: white;
+	text-transform: uppercase;
 }
 
 #login-dialog {
@@ -55,7 +56,7 @@ h1 {
 }
 
 .ui-panelgrid td {
-	height: 34px
+	height: 54px;
 }
 
 .ajax-status {
@@ -64,4 +65,25 @@ h1 {
 	right: 10px;
 	width: 35px;
 	height: 35px
+}
+
+a:hover {
+	color: #a50d12;
+	text-decoration: none;
+}
+
+.ui-datatable thead th {
+	background: #c4c4c4;
+	height: 35px;
+	-webkit-gradient: (linear, left top, left bottom,
+		from(rgba(255, 255, 255, 0.3)), to(rgba(255, 255, 255, 0.3)))
+		!important;
+}
+
+.ui-paginator.ui-paginator-bottom {
+	background: #c4c4c4;
+	height: 25px;
+	-webkit-gradient: (linear, left top, left bottom,
+		from(rgba(255, 255, 255, 0.3)), to(rgba(255, 255, 255, 0.3)))
+		!important;
 }
