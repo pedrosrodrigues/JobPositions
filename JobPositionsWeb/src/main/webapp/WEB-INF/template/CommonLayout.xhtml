@@ -22,15 +22,16 @@
 		</f:facet>
 	</p:ajaxStatus>
 
-	<header> <p:layout fullPage="true">
-		<p:layoutUnit position="north" size="200" collapsible="true">
-
-			<p:layout>
-				<p:layoutUnit position="west" size="200" style="border:0px;">
+	<header> 
+	<p:layout fullPage="true">
+		<p:layoutUnit position="north" size="205" collapsible="true" >
+	<!-- 		<p:layout>
+				<p:layoutUnit position="west" size="230" > -->
 					<h:graphicImage library="images" name="logo-critical.png"
-						style="margin:20px;" />
-				</p:layoutUnit>
-				<p:layoutUnit position="center" style="border:0px;">
+						style="margin:10px 20px;float:left; width:110px;" />
+	<!-- 			</p:layoutUnit>
+				<p:layoutUnit position="center"  -->
+
 					<a href="https://www.facebook.com/criticalsoftware" target="_blank">
 						<p:graphicImage styleClass="social-img" library="images"
 							name="facebook.png" />
@@ -51,11 +52,16 @@
 						target="_blank"> <p:graphicImage styleClass="social-img"
 							library="images" name="youtube.png" />
 					</a>
-
-
+					
+					<p:graphicImage library="images"
+							name="avatar.png" style="width:20px;" />
+			
+			<!-- 	</p:layoutUnit>
+				<p:layoutUnit position="south" size="120" > -->
+				
 					<p:toolbar
-						style="background:#a50d12; border:none; border-radius:0px;padding:10px;">
-						<p:toolbarGroup align="left" style="margin-left:50px;">
+						style="background:#a50d12; border-radius:0px;height:35px;margin-top:115px; padding-top:10px;">
+						<p:toolbarGroup align="left">
 							<h1>
 								<ui:insert name="bar">JOB POSITIONS</ui:insert>
 							</h1>
@@ -64,12 +70,11 @@
 							<p:inputText style="margin-right:10px" placeholder="Search" />
 						</p:toolbarGroup>
 					</p:toolbar>
-				</p:layoutUnit>
-			</p:layout>
-
+	<!-- 			</p:layoutUnit>
+			</p:layout> -->
 		</p:layoutUnit>
 
-		<p:layoutUnit position="south" size="50" >
+		<p:layoutUnit position="south" size="50" collapsible="true" resizable="false">
 			<p:separator />
 			<footer> © 1998 - 2015 CRITICAL Software All Rights
 			Reserved. - <a href="http://www.criticalsoftware.com/pt/homepage"
