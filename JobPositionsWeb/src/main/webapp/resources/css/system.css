@@ -5,6 +5,7 @@ body {
 	font-family: "PFDinDisplayProLight", Georgia;
 	margin: 0px;
 	font-weight: normal;
+	margin-top: 20px;
 }
 
 header {
@@ -20,7 +21,10 @@ header>div {
 }
 
 #conteudo {
-	padding: 0px 8px
+	padding: 0px 8px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	
 }
 
 footer {
@@ -124,5 +128,8 @@ a:link {
 	margin-top:10px; 
 	width: 20px;
 	float:right;
+}
+.newgrid {
+	background-color: white;
 }
 
