@@ -7,15 +7,14 @@
 
 	<ui:define name="title">Login</ui:define>
 	<ui:define name="body">
-		<p:tabView>
-			<p:tab title="Login">
 		<div>
-			<form>
-				<p:panelGrid columns="2" >
+			<h:form id="frm">
+			<p:layout >
+			<p:layoutUnit position="west" size="100" style="border:0px; margin-top:100px;"/>
+			<p:layoutUnit position="center" style="border:0px;margin-top:100px;">
+				<p:panelGrid columns="2" style="margin-top:100px; padding: 100px;" >
 					<p:outputLabel value="Login" for="login" />
-					<p:inputText id="login" required="true"
-						 />
-
+					<p:inputText id="login" required="true" />
 					<p:outputLabel value="Password" for="senha" />
 					<p:password id="senha" required="true"
 						 feedback="true"
@@ -29,21 +28,13 @@
 						style="margin-top: 20px; width:210px"
 						 />
 				</p:panelGrid>
-			</form>
+				</p:layoutUnit>
+				<p:layoutUnit position="est" style="border:0px;margin-top:100px;" size="200" />
+				</p:layout>
+				
+			</h:form>
 		</div>
-		</p:tab>
-		<p:tab title="Edit Info">	
-		Aqui edita-se!
-				</p:tab>
-			
-		<p:tab title="Consultar Candidaturas">	
-		E aqui consulta-se!
-				</p:tab>
-		
-		<p:tab title="Minhas Candidaturas">
-		E aqui faz-se coisas!
-				</p:tab>
-		</p:tabView>
+	
 		
 	</ui:define>
 
