@@ -10,12 +10,12 @@
 
 		<h:form id="frm">
 
-			<p:dataTable style="margin-top:20px; padding: 100px;" target="_blank" class="text-muted" 
+			<p:dataTable style="margin-top:20px; padding: 100px;"
 				value="#{searchPositionsBean.positions}" var="position" rows="10"
 				emptyMessage="No records found." paginator="true"
 				paginatorPosition="bottom"
 				paginatorTemplate=" {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink} {RowsPerPageDropdown}">
-				
+
 				<p:column styleClass="jobs-table" headerText="DESCRIPTION"
 					style="text-align: center; width:200px"
 					sortBy="COLOCAR AQUI O EL DO OUTPUTTEXT">
@@ -33,11 +33,40 @@
 				</p:column>
 
 				<p:rowExpansion id="rowselection">
-					<p:panelGrid columns="4" columnClasses="label" style="width:95%">
-						<h:outputText value="JOB DESCRIPTION" />
+					<p:panelGrid columns="2" columnClasses="label, field"
+						style="width:100%;">
+
+						<h:outputText value="Job Code" />
+						<h:outputText value="541" />
+
+						<h:outputText value="Function" />
+						<h:outputText value="Java Engineer" />
+
+						<h:outputText value="Location" />
+						<h:outputText value="Brazil (S. Paulo)" />
+
+						<h:outputText value="# of openings" />
+						<h:outputText value="1" />
+
 					</p:panelGrid>
+
+					<p:panelGrid columns="1" style="width:100%;">
+			
+						<p:inputTextarea rows="10" cols="100" style="width:95%" />
+						<h:outputText value="Description" />
+						<p:commandButton value="Submit" id="ajax" >
+							<p:confirm header="Job Position"
+								message="Para responder a esta, e outras ofertas de emprego, REGISTE-SE ou faça o seu LOGIN." />
+						</p:commandButton>
+					</p:panelGrid>
+					<p:confirmDialog global="true" showEffect="fade" hideEffect="fade">
+						<p:commandButton value="Login" 
+							styleClass="ui-confirmdialog-yes" action="Login?faces-redirect=true" />
+						<p:commandButton value="Registration" type="button"
+							styleClass="ui-confirmdialog-no" />
+					</p:confirmDialog>
 				</p:rowExpansion>
-		</p:dataTable>
+			</p:dataTable>
 		</h:form>
 	</ui:define>
 

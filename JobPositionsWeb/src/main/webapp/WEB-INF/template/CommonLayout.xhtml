@@ -22,41 +22,45 @@
 		</f:facet>
 	</p:ajaxStatus>
 
-	<header> <p:toolbar
-		style="padding:0.8em; background:white;border:white;">
-		<p:toolbarGroup align="left">
+	<header> <p:layout style="height:200px;border:0px;">
+		<p:layoutUnit position="west" size="200" style="border:0px;">
 			<h:graphicImage library="images" name="logo-critical.png"
-				style="margin:20px;" />
-		</p:toolbarGroup>
+				style="margin-top:10px; margin:20px;" />
+		</p:layoutUnit>
+		<p:layoutUnit position="center" style="border:0px;">
+			<a href="https://www.facebook.com/criticalsoftware" target="_blank">
+				<p:graphicImage styleClass="social-img" library="images"
+					name="facebook.png" />
+			</a>
+			<a href="https://plus.google.com/+criticalsoftware/posts"
+				target="_blank"> <p:graphicImage styleClass="social-img" library="images"
+					name="google.png" />
+			</a>
+			<a href="https://www.linkedin.com/company/critical-software"
+				target="_blank"> <p:graphicImage styleClass="social-img" library="images"
+					name="linked.png" />
+			</a>
+			<a href="https://twitter.com/CriticalSftware" target="_blank"> <p:graphicImage
+					styleClass="social-img" library="images" name="twiter.png" />
+			</a>
+			<a href="https://www.youtube.com/user/criticalsoftware"
+				target="_blank"> <p:graphicImage styleClass="social-img" library="images"
+					name="youtube.png" />
+			</a>
 
-		<p:toolbarGroup align="right">
-			<a href="https://www.facebook.com/criticalsoftware"> <p:graphicImage
-					library="images" name="facebook.png"
-					style="margin:2px; margin-top:20px; width: 20px;" target="_blank" />
-			</a>
-			<a href="https://plus.google.com/+criticalsoftware/posts"> <p:graphicImage
-					library="images" name="google.png" style="margin:2px; width: 20px;" />
-			</a>
-			<a href="https://www.linkedin.com/company/critical-software"> <p:graphicImage
-					library="images" name="linked.png" style="margin:2px; width: 20px;" />
-			</a>
-			<a href="https://twitter.com/CriticalSftware"> <p:graphicImage
-					library="images" name="twiter.png" style="margin:2px; width: 20px;" />
-			</a>
-			<a href="https://www.youtube.com/user/criticalsoftware"> <p:graphicImage
-					library="images" name="youtube.png"
-					style="margin:2px; width: 20px;" />
-			</a>
-		</p:toolbarGroup>
-	</p:toolbar>
+		</p:layoutUnit>
+
+	</p:layout>
 	<div>
-	
-		<p:toolbar style="background:#a50d12; border:none; border-radius:0px;padding:10px;">
-			<p:toolbarGroup align="left">
+
+		<p:toolbar
+			style="background:#a50d12; border:none; border-radius:0px;padding:10px;">
+			<p:toolbarGroup align="left" style="margin-left:50px;">
 				<h1>JOB POSITIONS</h1>
 			</p:toolbarGroup>
 			<p:toolbarGroup align="right">
-				<p:inputText style="margin-right:10px" placeholder="Search" />
+				<p:inputText style="margin-right:10px" placeholder="Search"
+					icon="ui-icon-carat-1-n" />
 			</p:toolbarGroup>
 		</p:toolbar>
 	</div>
@@ -66,11 +70,13 @@
 		<ui:insert name="body" />
 	</div>
 
+
+
 	<p:separator style="margin-top: 20px" />
 
-	<footer> Projecto final do curso Acertar o Rumo! - <a
-		href="http://www.criticalsoftware.com/pt/homepage" target="_blank">www.criticalsoftware.com</a>
-	</footer>
+	<footer> © 1998 - 2015 CRITICAL Software All Rights Reserved.
+	- <a href="http://www.criticalsoftware.com/pt/homepage" target="_blank">
+		Contactos / Termos e Política de Privacidade</a> </footer>
 </h:body>
 
 </html>
