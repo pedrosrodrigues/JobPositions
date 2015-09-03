@@ -6,12 +6,12 @@
 	xmlns:p="http://primefaces.org/ui">
 
 	<ui:define name="title">Login</ui:define>
-	<ui:define name="bar">Login4</ui:define>
+	<ui:define name="bar">Login</ui:define>
 	<ui:define name="body">
-		<div>
+	<h:body>
 			<h:form id="frm">
 			<p:layout >
-			<p:layoutUnit position="west" size="100" style="border:0px; margin-top:100px;"/>
+			<p:layoutUnit position="west" size="100" style="border:0px;padding:100px;"/>
 			<p:layoutUnit position="center" style="border:0px;margin-top:100px;">
 				<p:panelGrid columns="2" style="margin-top:100px; padding: 100px;" >
 					<p:outputLabel value="Login" for="login" />
@@ -33,12 +33,7 @@
 				<p:layoutUnit position="est" style="border:0px;margin-top:100px;" size="200" />
 				</p:layout>
 				
-			</h:form>
-		</div>
-	
-		
+			</h:form>	
+			</h:body>	
 	</ui:define>
-
-
-
 </ui:composition>
