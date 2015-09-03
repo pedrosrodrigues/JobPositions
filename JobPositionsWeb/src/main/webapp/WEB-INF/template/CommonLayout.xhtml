@@ -22,71 +22,71 @@
 		</f:facet>
 	</p:ajaxStatus>
 
-<header> 
-     <p:layout fullPage="true">
-    <p:layoutUnit position="north" size="200" collapsible="true">
-    
-    	<p:layout style="height:200px;">
-		<p:layoutUnit position="west" size="200" style="border:0px;" >
-			<h:graphicImage library="images" name="logo-critical.png"
-				style="margin-top:10px; margin:20px;" />
+	<header> <p:layout fullPage="true">
+		<p:layoutUnit position="north" size="200" collapsible="true">
+
+			<p:layout>
+				<p:layoutUnit position="west" size="200" style="border:0px;">
+					<h:graphicImage library="images" name="logo-critical.png"
+						style="margin:20px;" />
+				</p:layoutUnit>
+				<p:layoutUnit position="center" style="border:0px;">
+					<a href="https://www.facebook.com/criticalsoftware" target="_blank">
+						<p:graphicImage styleClass="social-img" library="images"
+							name="facebook.png" />
+					</a>
+					<a href="https://plus.google.com/+criticalsoftware/posts"
+						target="_blank"> <p:graphicImage styleClass="social-img"
+							library="images" name="google.png" />
+					</a>
+					<a href="https://www.linkedin.com/company/critical-software"
+						target="_blank"> <p:graphicImage styleClass="social-img"
+							library="images" name="linked.png" />
+					</a>
+					<a href="https://twitter.com/CriticalSftware" target="_blank">
+						<p:graphicImage styleClass="social-img" library="images"
+							name="twiter.png" />
+					</a>
+					<a href="https://www.youtube.com/user/criticalsoftware"
+						target="_blank"> <p:graphicImage styleClass="social-img"
+							library="images" name="youtube.png" />
+					</a>
+
+
+					<p:toolbar
+						style="background:#a50d12; border:none; border-radius:0px;padding:10px;">
+						<p:toolbarGroup align="left" style="margin-left:50px;">
+							<h1>
+								<ui:insert name="bar">JOB POSITIONS</ui:insert>
+							</h1>
+						</p:toolbarGroup>
+						<p:toolbarGroup align="right">
+							<p:inputText style="margin-right:10px" placeholder="Search" />
+						</p:toolbarGroup>
+					</p:toolbar>
+				</p:layoutUnit>
+			</p:layout>
+
 		</p:layoutUnit>
-		<p:layoutUnit position="center" style="border:0px;">
-			<a href="https://www.facebook.com/criticalsoftware" target="_blank">
-				<p:graphicImage styleClass="social-img" library="images"
-					name="facebook.png" />
-			</a>
-			<a href="https://plus.google.com/+criticalsoftware/posts"
-				target="_blank"> <p:graphicImage styleClass="social-img" library="images"
-					name="google.png" />
-			</a>
-			<a href="https://www.linkedin.com/company/critical-software"
-				target="_blank"> <p:graphicImage styleClass="social-img" library="images"
-					name="linked.png" />
-			</a>
-			<a href="https://twitter.com/CriticalSftware" target="_blank"> <p:graphicImage
-					styleClass="social-img" library="images" name="twiter.png" />
-			</a>
-			<a href="https://www.youtube.com/user/criticalsoftware"
-				target="_blank"> <p:graphicImage styleClass="social-img" library="images"
-					name="youtube.png" />
-			</a>
+
+		<p:layoutUnit position="south" size="50" >
+			<p:separator />
+			<footer> © 1998 - 2015 CRITICAL Software All Rights
+			Reserved. - <a href="http://www.criticalsoftware.com/pt/homepage"
+				target="_blank"> Contactos / Termos e Política de Privacidade</a> </footer>
 		</p:layoutUnit>
-	</p:layout>
-	<div>
-		<p:toolbar
-			style="background:#a50d12; border:none; border-radius:0px;padding:10px;">
-			<p:toolbarGroup align="left" style="margin-left:50px;">
-				<h1><ui:insert name="bar">JOB POSITIONS</ui:insert></h1>
-			</p:toolbarGroup>
-			<p:toolbarGroup align="right">
-				<p:inputText style="margin-right:10px" placeholder="Search" />
-			</p:toolbarGroup>
-		</p:toolbar>
-	</div>
-    </p:layoutUnit>
- 
-    <p:layoutUnit position="south" size="100"  collapsible="true">
-      <p:separator style="margin-top: 20px" />
 
-	<footer> © 1998 - 2015 CRITICAL Software All Rights Reserved.
-	- <a href="http://www.criticalsoftware.com/pt/homepage" target="_blank">
-		Contactos / Termos e Política de Privacidade</a> </footer>
-    </p:layoutUnit>
- 
-    <p:layoutUnit position="center">
-      	<div id="conteudo">
-		<ui:insert name="body" />
-	</div>
-    </p:layoutUnit>
- 
-</p:layout>  
+		<p:layoutUnit position="center">
+			<div id="conteudo">
+				<ui:insert name="body" />
+			</div>
+		</p:layoutUnit>
 
-	</header>
+	</p:layout> </header>
 
 
 
-	
+
 </h:body>
 
 </html>
