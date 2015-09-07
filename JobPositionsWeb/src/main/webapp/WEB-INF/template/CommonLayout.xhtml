@@ -22,66 +22,82 @@
 		</f:facet>
 	</p:ajaxStatus>
 
-	<header> 
-	<p:layout fullPage="true">
-		<p:layoutUnit position="north" size="205" collapsible="true" >
-	<!-- 		<p:layout>
-				<p:layoutUnit position="west" size="230" > -->
-					<h:graphicImage library="images" name="logo-critical.png"
-						style="margin:10px 20px;float:left; width:110px;" />
-	<!-- 			</p:layoutUnit>
-				<p:layoutUnit position="center"  -->
+	<header> <p:layout fullPage="true">
 
-					<a href="https://www.facebook.com/criticalsoftware" target="_blank">
-						<p:graphicImage styleClass="social-img" library="images"
-							name="facebook.png" />
-					</a>
-					<a href="https://plus.google.com/+criticalsoftware/posts"
-						target="_blank"> <p:graphicImage styleClass="social-img"
-							library="images" name="google.png" />
-					</a>
-					<a href="https://www.linkedin.com/company/critical-software"
-						target="_blank"> <p:graphicImage styleClass="social-img"
-							library="images" name="linked.png" />
-					</a>
-					<a href="https://twitter.com/CriticalSftware" target="_blank">
-						<p:graphicImage styleClass="social-img" library="images"
-							name="twiter.png" />
-					</a>
-					<a href="https://www.youtube.com/user/criticalsoftware"
-						target="_blank"> <p:graphicImage styleClass="social-img"
-							library="images" name="youtube.png" />
-					</a>
-					
-					<p:graphicImage library="images"
-							name="avatar.png" style="width:20px;" />
-			
-			<!-- 	</p:layoutUnit>
-				<p:layoutUnit position="south" size="120" > -->
-				
-					<p:toolbar
-						style="background:#a50d12; border-radius:0px;height:35px;margin-top:115px; padding-top:10px;">
-						<p:toolbarGroup align="left">
-							<h1>
-								<ui:insert name="bar">JOB POSITIONS</ui:insert>
-							</h1>
-						</p:toolbarGroup>
-						<p:toolbarGroup align="right">
-							<p:inputText style="margin-right:10px" placeholder="Search" />
-						</p:toolbarGroup>
-					</p:toolbar>
-	<!-- 			</p:layoutUnit>
-			</p:layout> -->
+		<p:layoutUnit position="north" size="205" collapsible="true">
+			<!-- 		<p:layout>
+				<p:layoutUnit position="west" size="230" > -->
+			<div style="float: left;">
+				<h:graphicImage library="images" name="logo-critical.png"
+					style="margin:10px 20px;float:left; width:110px;" />
+				<!-- 			</p:layoutUnit>
+				<p:layoutUnit position="center"  -->
+			</div>
+			<div style="float: right;">
+				<a href="https://www.facebook.com/criticalsoftware" target="_blank">
+					<p:graphicImage styleClass="social-img" library="images"
+						name="facebook.png" />
+				</a> <a href="https://plus.google.com/+criticalsoftware/posts"
+					target="_blank"> <p:graphicImage styleClass="social-img"
+						library="images" name="google.png" />
+				</a> <a href="https://www.linkedin.com/company/critical-software"
+					target="_blank"> <p:graphicImage styleClass="social-img"
+						library="images" name="linked.png" />
+				</a> <a href="https://twitter.com/CriticalSftware" target="_blank">
+					<p:graphicImage styleClass="social-img" library="images"
+						name="twiter.png" />
+				</a> <a href="https://www.youtube.com/user/criticalsoftware"
+					target="_blank"> <p:graphicImage styleClass="social-img"
+						library="images" name="youtube.png" />
+				</a>
+			</div>
+
+			<div style="float: bottom, right;">
+				<h:form style="display:inline-block;">
+					<p:menubar styleClass="system-menu">
+						<p:submenu label="">
+							<p:submenu label="New" icon="ui-icon-contact">
+								<p:menuitem value="Project" url="#" />
+
+								<p:menuitem value="Other" url="#" />
+							</p:submenu>
+							<p:menuitem value="Open" url="#" />
+							<p:separator />
+							<p:menuitem value="Quit" url="#" />
+						</p:submenu>
+					</p:menubar>
+				</h:form>
+				<!-- 	<p:menu overlay="true" trigger="img"
+        my="left top"
+        at="bottom left"
+        model="#{notificationMenu.model}" />
+<p:graphicImage id="img" /> -->
+			</div>
+			<div style="clear: both" />
+			<div>
+				<p:toolbar
+					style="background:#a50d12; border-radius:0px;height:35px; padding-top:10px;">
+					<p:toolbarGroup align="left">
+						<h1>
+							<ui:insert name="bar">JOB POSITIONS</ui:insert>
+						</h1>
+					</p:toolbarGroup>
+					<p:toolbarGroup align="right">
+						<p:inputText style="margin-right:10px" placeholder="Search" />
+					</p:toolbarGroup>
+				</p:toolbar>
+			</div>
 		</p:layoutUnit>
 
-		<p:layoutUnit position="south" size="50" collapsible="true" resizable="false">
+		<p:layoutUnit position="south" size="50" collapsible="true"
+			resizable="false">
 			<p:separator />
 			<footer> © 1998 - 2015 CRITICAL Software All Rights
 			Reserved. - <a href="http://www.criticalsoftware.com/pt/homepage"
 				target="_blank"> Contactos / Termos e Política de Privacidade</a> </footer>
 		</p:layoutUnit>
 
-		<p:layoutUnit position="center">
+		<p:layoutUnit position="center" collapsible="true" resizable="false">
 			<div id="conteudo">
 				<ui:insert name="body" />
 			</div>

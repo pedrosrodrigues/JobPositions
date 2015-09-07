@@ -137,3 +137,21 @@ a:link {
 .ui-layout-pane {
     border: 0;
 }
+
+/* header img.cutout{
+    float:right;
+    position:absolute;
+    bottom:0;
+    right:0;
+    clear:right
+} */
+
+.system-menu {
+	border: 0px important!;
+	padding: 0px important!;
+	background:none important!;
+}
+
+.system-menu .ui-icon-triangle-1-s {
+	background:url(#{resource['images:avatar.png']});
+}
