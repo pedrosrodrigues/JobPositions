@@ -152,6 +152,10 @@ a:link {
 	background:none important!;
 }
 
+.system-menu .ui-menu-parent > a .ui-menuitem-text, .system-menu > .ui-menu-list > .ui-menuitem > a .ui-menuitem-text {
+	color: #ffffff !important;	
+}
+
 .system-menu .ui-icon-triangle-1-s {
-	background:url(#{resource['images:avatar.png']});
+	background:url(#{resource['images:avatar.png']})no-repeat;	
 }
